@@ -1,0 +1,41 @@
+ext {
+    versions = [
+            androidx: [
+                    core     : '1.7.0',
+                    lifecycle: '2.4.1'
+            ],
+            compose : [
+                    core      : '1.1.1',
+                    activity  : '1.4.0',
+                    navigation: '2.4.1'
+            ],
+            di      : [
+                    koin: '3.2.0-beta-1'
+            ],
+            timber  : '5.0.1',
+            test    : [
+                    junit: '4.13.2'
+            ]
+    ]
+
+    deps = [
+            androidx: [
+                    core_ktx : "androidx.core:core-ktx:${versions.androidx.core}",
+                    lifecycle: "androidx.lifecycle:lifecycle-runtime-ktx:${versions.androidx.lifecycle}"
+            ],
+            compose : [
+                    activity          : "androidx.activity:activity-compose:${versions.compose.activity}",
+                    ui                : "androidx.compose.ui:ui:${versions.compose.core}",
+                    material          : "androidx.compose.material:material:${versions.compose.core}",
+                    ui_tooling        : "androidx.compose.ui:ui-tooling:${versions.compose.core}",
+                    ui_tooling_preview: "androidx.compose.ui:ui-tooling-preview:${versions.compose.core}",
+                    navigation        : "androidx.navigation:navigation-compose:${versions.compose.navigation}"
+            ],
+            di      : [
+                    koin        : "io.insert-koin:koin-android:${versions.di.koin}",
+                    navigation  : "io.insert-koin:koin-androidx-navigation:${versions.di.koin}",
+                    koin_compose: "io.insert-koin:koin-androidx-compose:${versions.di.koin}"
+            ],
+            timber  : "com.jakewharton.timber:timber:${versions.timber}"
+    ]
+}

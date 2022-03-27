@@ -1,0 +1,34 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation deps.androidx.core_ktx
+    implementation deps.androidx.lifecycle
+
+    implementation deps.compose.activity
+    implementation deps.compose.material
+    implementation deps.compose.ui
+    implementation deps.compose.ui_tooling_preview
+    implementation deps.compose.navigation
+    implementation deps.di.koin
+    implementation deps.di.navigation
+    implementation deps.di.koin_compose
+    implementation deps.timber
+
+    debugImplementation deps.compose.ui_tooling
+
+    implementation project(':core_ui')
+    implementation project(':navigation')
+    implementation project(':views')
+}
