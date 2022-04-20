@@ -28,7 +28,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import me.kovp.navigation.screens.counterScreen
 import org.koin.androidx.compose.viewModel
 
 @ExperimentalMaterialApi
@@ -139,7 +138,7 @@ fun BottomNavigationBar(
 fun Navigation(navHost: NavHostController) {
     val vm: CardViewModel by viewModel<CardViewModelImpl>()
     NavHost(navController = navHost, startDestination = "home") {
-        counterScreen()
+
         composable("chat") {
             Greeting("Chat")
         }
@@ -148,22 +147,3 @@ fun Navigation(navHost: NavHostController) {
         }
     }
 }
-
-//@Composable
-//fun CardScreen() {
-//    loadKoinModules(counterVM())
-//    val vm: CounterViewModel by viewModel<CounterViewModelImpl>()
-//    Column {
-//        Counter(
-//            text = vm.counterState.value.currentWeight.toString(),
-//            onDecrease = { vm.onEvent(DecreaseWeight) },
-//            onIncrease = { vm.onEvent(IncreaseWeight) }
-//        )
-//        Spacer(modifier = Modifier.size(50.dp))
-//        Counter(
-//            text = vm.counterState.value.currentReps.toString(),
-//            onDecrease = { vm.onEvent(DecreaseReps) },
-//            onIncrease = { vm.onEvent(IncreaseReps) }
-//        )
-//    }
-//}
