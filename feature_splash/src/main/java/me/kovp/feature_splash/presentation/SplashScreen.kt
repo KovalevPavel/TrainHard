@@ -1,4 +1,4 @@
-package me.kovp.navigation.creators
+package me.kovp.feature_splash.presentation
 
 import androidx.compose.foundation.background
 

@@ -5,7 +5,6 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import me.kovp.navigation.screens.CounterScreen
 import me.kovp.navigation.screens.NavigationInitializer
-import me.kovp.navigation.screens.SplashScreen
 
 class NavigationInitializerImpl(
     private val navController: NavHostController
