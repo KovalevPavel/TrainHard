@@ -21,7 +21,7 @@ class TrainApp : Application() {
         startKoin {
             androidContext(this@TrainApp)
             modules(
-                cardViewModelModule
+
             )
         }
     }

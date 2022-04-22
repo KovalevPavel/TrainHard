@@ -1,4 +1,4 @@
-package me.kovp.navigation.creators
+package me.kovp.feature_main
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -15,7 +15,7 @@ import me.kovp.views.counter.presentation.Counter
 
 @Preview
 @Composable
-fun CounterScreen() {
+fun MainScreenCompose() {
     Row {
         Card(
             modifier = Modifier

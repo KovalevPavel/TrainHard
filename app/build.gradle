@@ -32,4 +32,5 @@ dependencies {
     implementation project(':navigation')
     implementation project(':views')
     implementation project(':feature_splash')
+    implementation project(':feature_main')
 }

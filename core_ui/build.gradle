@@ -5,7 +5,7 @@ plugins {
 
 dependencies {
 
-    implementation deps.compose.material
-    implementation deps.compose.ui
-    implementation deps.compose.ui_tooling_preview
+    api deps.compose.material
+    api deps.compose.ui
+    api deps.compose.ui_tooling_preview
 }

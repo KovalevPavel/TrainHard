@@ -1,8 +1,8 @@
-package me.kovp.navigation.screens
+package me.kovp.navigation
 
 import androidx.compose.runtime.Composable
 
-fun interface NavigationInitializer {
+interface NavigationInitializer {
     @Composable
     fun Initialize()
 }
