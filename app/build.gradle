@@ -28,9 +28,12 @@ dependencies {
 
     debugImplementation deps.compose.ui_tooling
 
+    implementation project(':core')
     implementation project(':core_ui')
-    implementation project(':navigation')
+    implementation project(':navigation_api')
     implementation project(':views')
     implementation project(':feature_splash')
+    implementation project(':feature_splash_api')
     implementation project(':feature_main')
+    implementation project(':feature_main_api')
 }

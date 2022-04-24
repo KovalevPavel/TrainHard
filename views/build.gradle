@@ -27,6 +27,7 @@ dependencies {
     implementation deps.timber
 
     implementation project(':core_ui')
+    implementation project(':navigation_api')
 
     debugImplementation deps.compose.ui_tooling
 }

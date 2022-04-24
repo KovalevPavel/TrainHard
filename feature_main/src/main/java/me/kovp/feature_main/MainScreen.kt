@@ -1,12 +1,15 @@
-package me.kovp.feature_splash.presentation
+package me.kovp.feature_main
 
+import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
-import me.kovp.feature_splash_api.SplashScreenApi
+import me.kovp.feature_main_api.MainScreenApi
 
-class SplashScreen : SplashScreenApi {
+@ExperimentalMaterialApi
+class MainScreen: MainScreenApi {
+
     override fun navRoute() = ROUTE
 
     override fun registerGraph(
@@ -15,11 +18,11 @@ class SplashScreen : SplashScreenApi {
         modifier: Modifier
     ) {
         navGraphBuilder.composable(ROUTE) {
-            SplashScreenCompose(navController)
+            MainScreenCompose(navController)
         }
     }
 
     companion object {
-        private const val ROUTE = "splash_screen"
+        private const val ROUTE = "main_screen"
     }
 }
