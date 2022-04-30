@@ -9,5 +9,9 @@ dependencies {
     implementation project(':navigation_api')
     implementation project(':views')
 
+    implementation deps.di.koin
+    implementation deps.di.navigation
+    implementation deps.di.koin_compose
+    
     implementation deps.timber
 }
