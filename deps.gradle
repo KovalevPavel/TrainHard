@@ -25,6 +25,7 @@ ext {
             ],
             compose : [
                     activity          : "androidx.activity:activity-compose:${versions.compose.activity}",
+                    livedata          : "androidx.compose.runtime:runtime-livedata:${versions.compose.core}",
                     ui                : "androidx.compose.ui:ui:${versions.compose.core}",
                     material          : "androidx.compose.material:material:${versions.compose.core}",
                     ui_tooling        : "androidx.compose.ui:ui-tooling:${versions.compose.core}",

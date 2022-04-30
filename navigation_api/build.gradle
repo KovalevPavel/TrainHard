@@ -1,0 +1,18 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+dependencies {
+
+    implementation deps.compose.material
+    implementation deps.compose.ui
+    implementation deps.compose.ui_tooling_preview
+    api deps.compose.navigation
+    implementation deps.di.koin
+    implementation deps.di.navigation
+    implementation deps.di.koin_compose
+    implementation deps.timber
+
+    debugImplementation deps.compose.ui_tooling
+}

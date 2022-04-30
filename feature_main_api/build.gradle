@@ -4,7 +4,5 @@ plugins {
 }
 
 dependencies {
-    api deps.compose.material
-    api deps.compose.ui
-    api deps.compose.ui_tooling_preview
+    implementation project(':navigation_api')
 }

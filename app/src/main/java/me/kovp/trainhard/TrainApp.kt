@@ -20,9 +20,6 @@ class TrainApp : Application() {
     private fun initDi() {
         startKoin {
             androidContext(this@TrainApp)
-            modules(
-                cardViewModelModule
-            )
         }
     }
 }
